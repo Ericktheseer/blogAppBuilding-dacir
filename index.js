@@ -23,7 +23,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const corsOptions = {
-    origin: ['http://localhost:5173', 'http://localhost:8000'],
+    origin: [
+        'http://localhost:5173',
+        'http://localhost:8000',
+        'https://blog-app-buildingclient-dacir.vercel.app'
+    ],
     credentials: true,
     optionSuccessStatus: 200
 };
